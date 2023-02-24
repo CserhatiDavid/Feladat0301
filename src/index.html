@@ -1,3 +1,16 @@
+<!--
+    /*
+* File: index.html
+* Author: Cserhati David
+* Copyright: 2023, Cserhati David
+* Group: Szoft I-2 N
+* Date: 2023-02-23
+* Github: https://github.com/CserhatiDavid/
+* Licenc: GNU GPL
+* Nem vállalunk felelősséget a rossz jegyekért
+*/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +19,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <title>Sablon</title>
+    <title>Terkup</title>
 </head>
 <body>
-    <div id="container">
-        <h1>Sablon</h1>
+    <div class="container bg-danger">
+        <h1>Kúp Térfogat</h1>
+        <div class="mt-3">
+            <label for="radius" class="form-label">Sugár</label>
+            <input type="text" id="radius" class="form-control">
+        </div>
+        <div class="mt-3">
+            <label for="height" class="form-label">Magasság</label>
+            <input type="text" id="height" class="form-control">
+        </div>
+        <div class="mt-3">
+            <button id="calcButton" class="btn btn-primary">Számít</button>
+        </div>
+        <div class="mt-3 pb-3" id="result">
+            <label for="area" class="form-label">Terület</label>
+            <input type="text" id="area" class="form-control" readonly>
+        </div>
     </div>
+    <footer>
+        <br>Author: Cserhati David, <br>Date: 2023-02-23<br>Group: Szoft I-2 N
+    </footer>
     <script src="js/bootstrap.js"></script>
     <script src="app.js"></script>
 </body>
