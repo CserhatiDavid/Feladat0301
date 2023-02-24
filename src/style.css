@@ -15,5 +15,8 @@ footer{
     background-image: linear-gradient(aqua,blue);
     margin-top: 10px;
     border-radius: 5px;
-    
+
+}
+#result{
+    display: none;
 }
